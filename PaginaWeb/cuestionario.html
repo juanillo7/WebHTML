@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasQueCoches</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <h1 class="titlemidle">Cuestionario de Satisfacción</h1>
+
+    <form id="formularioSatisfaccion" action="procesar_cuestionario.php" method="POST">
+       
+        <div class="campo">¿Cuál coche te gustó más?</div>
+        <select id="cocheFavorito" name="cocheFavorito">
+            <option value="">Selecciona una opción</option>
+            <option value="mustang">Ford Mustang</option>
+            <option value="toyotaCorolla">Toyota Corolla</option>
+            <option value="teslaModelS">Tesla Model S</option>
+            <option value="bmwM3G80">BMW M3 G80</option>
+            <option value="porscheGT3RS">Porsche GT3 RS</option>
+            <option value="ferrariSF90">Ferrari SF90 Stradale</option>
+        </select>
+
+      
+        <div class="campo">¿Qué coche añadirías a la página?</div>
+        <input type="text" id="cocheAdicional" name="cocheAdicional" placeholder="Escribe el nombre del coche">
+
+       
+        <div class="campo">¿Por qué te ha gustado?</div>
+        <textarea id="razon" name="razon" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+
+        
+        <div class="campo">Nombre</div>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+       
+        <div class="campo">Sexo</div>
+        <select id="sexo" name="sexo">
+            <option value="">Selecciona una opción</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="prefieroNoDecirlo">Prefiero no decirlo</option>
+        </select>
+
+        
+        <div class="campo">Edad</div>
+        <input type="number" id="edad" name="edad" placeholder="Introduce tu edad" min="0" max="120">
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
